@@ -1,6 +1,5 @@
 # db-university  
   
-  `ciao`
   
 1. Selezionare tutti gli studenti nati nel 1990 (160)  
 
