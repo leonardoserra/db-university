@@ -19,7 +19,7 @@
   
 > SELECT *  
 > FROM `students`  
-> WHERE (2023 - YEAR(`date_of_birth`)) > 30;  
+> WHERE (YEAR(CURDATE()) - YEAR(`date_of_birth`)) > 30;  
   
   
 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)  
@@ -54,6 +54,6 @@
   
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)  
   
-> SELECT *  
+> SELECT COUNT(`id`) AS `num_insegnanti`   
 > FROM `teachers`  
 > WHERE `phone` IS NULL;  
